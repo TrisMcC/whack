@@ -1,0 +1,65 @@
+body {
+    text-align: center;
+}
+
+.container {
+    display: flex;
+}
+
+.container > div {
+    flex: 1 1 auto;
+}
+
+.side {
+    width: 150px;
+}
+
+.yard {
+    width: 600px;
+    overflow: hidden;
+    background: #0F0;
+    margin: 0 auto;
+    opacity: 0.5;
+}
+
+.ready .yard {
+    cursor: pointer;
+    opacity: 1;
+}
+
+.ready .start-button {
+    display: none;
+}
+
+.hole {
+    width: 198px;
+    height: 198px;
+    float: left;
+    background: #00F;
+    border: 1px solid #000;
+}
+
+.mole {
+    background: #FF0;
+}
+
+.you-won, .you-lost {
+    position: fixed;
+    top: -100px;
+    left: 0;
+    right: 0;
+    transition: top 1s ease;
+    font-size: 36px;
+}
+
+.won .you-won {
+    top: 100px;
+}
+
+.lost .you-lost {
+    top: 100px;
+}
+
+.score, .countdown {
+    font-size: 36px;
+}

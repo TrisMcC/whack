@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Whack-A-Mole</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="side">
+                Score:
+                <div class="score" id="score">0</div>
+            </div>
+            <div>
+                <div id="yard" class="yard">
+                    <div class="hole"></div>
+                    <div class="hole"></div>
+                    <div class="hole"></div>
+                    <div class="hole"></div>
+                    <div class="hole"></div>
+                    <div class="hole"></div>
+                    <div class="hole"></div>
+                    <div class="hole"></div>
+                    <div class="hole"></div>
+                </div>
+                <button class="start-button" id="start-button">Start</button>
+            </div>
+            <div class="side">
+                Timer:
+                <div class="countdown" id="countdown">0ms</div>
+            </div>
+        </div>
+        <div class="you-won">You Won!</div>
+        <div class="you-lost">You Lost!</div>
+    </body>
+</html>
